@@ -44,19 +44,53 @@
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .portfolio__container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio__container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__container {
+    width: 1200px;
+  }
 }
 
 .h1,
@@ -1116,8 +1150,16 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /***************/
@@ -1274,75 +1316,6 @@ a {
 /* ***************** */
 /* Особенности */
 /* ***************** */
-.subtitles {
-  padding-bottom: 10px;
-  margin: 0;
-  color: var(--main-text-color);
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.42;
-}
-
-.text {
-  margin: 0;
-  color: var(--secondary-text-color);
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.special__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.special__link {
-  margin: 0;
-  padding-right: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.special__link:last-child {
-  padding-right: 0px;
-}
-
-.special__list {
-  margin-right: 30px;
-}
-
-.special__link > .special__list {
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
-}
-
-.list__icon:hover,
-.list__icon:focus {
-  fill: var(--accent-color);
-}
-
-.special__list__icon {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /* ***************** */
 /* Наша Команда */
 /* ***************** */
