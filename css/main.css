@@ -1156,7 +1156,6 @@ a {
 
 @media screen and (min-width: 1200px) {
   .section {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1316,6 +1315,120 @@ a {
 /* ***************** */
 /* Особенности */
 /* ***************** */
+@media screen and (min-width: 768px) {
+  .special__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.special__link {
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .special__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .special__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding-right: 30px;
+  }
+}
+
+.special__link:last-child {
+  padding-right: 0px;
+}
+
+.special__list {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .special__list {
+    -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
+        flex-basis: calc((100% - 1 * 30px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .special__list {
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .special__list:nth-child(2n + 2) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .special__list:nth-child(2n + 2) {
+    margin-right: 30px;
+  }
+}
+
+.special__list__icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .special__list__icon {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .special__list__icon {
+    width: 354px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .special__list__icon {
+    width: 270px;
+    height: 120px;
+  }
+}
+
 /* ***************** */
 /* Наша Команда */
 /* ***************** */
