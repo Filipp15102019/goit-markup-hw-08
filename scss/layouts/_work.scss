@@ -2,21 +2,16 @@
 /* Чем мы занимаемся */
 /* ***************** */
 
-.subject {
-  color: var(--main-text-color);
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 .work__container {
-  padding-top: 0;
+  @include mq(not-desktop) {
+    display: none;
+    padding-top: 0;
+  }
 }
+
 .work__subtitles {
-  margin-bottom: 50px;
   margin-top: 0;
+  margin-bottom: 50px;
 }
 .special__link {
   padding: 0;

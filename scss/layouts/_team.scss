@@ -6,23 +6,63 @@
   color: var(--bg-color-section);
   background: #f5f4fa;
 }
+
 .work__team--link {
-  display: flex;
-  align-items: center;
-  padding-left: 0;
-  margin: 0;
+  @include mq(mobile-only) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0;
+  }
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+  }
+  @include mq(desktop) {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+  }
 }
 .team__list {
-  margin-right: 30px;
   background: #f5f4fa;
 
-  &:last-child {
-    margin-right: 0;
+  @include mq(mobile-only) {
+    margin-bottom: 30px;
+    width: 450px;
+    height: 622px;
   }
-  .work__team--link > & {
-    flex-basis: 300;
+  @include mq(tablet-only) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 354px;
+    height: 536px;
+  }
+  @include mq(desktop) {
+    margin-right: 30px;
+    width: 270px;
   }
 }
+.team__list:nth-child(2n + 2) {
+  @include mq(tablet-only) {
+    margin: 0;
+  }
+}
+
+.team__list:last-child {
+  @include mq(desktop) {
+    margin-right: 0;
+  }
+}
+
+// // .work__team--link > & {
+//   //   flex-basis: 300;
+//   // }
 .personal {
   background-color: var(--primery-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -30,18 +70,26 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.subtitles {
-  color: var(--main-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+// .subtitles
+// // {
+// //   color: var(--main-text-color);
+// //   font-weight: 700;
+// //   font-size: 14px;
+// //   line-height: 1.14;
+// //   letter-spacing: 0.03em;
+// //   text-transform: uppercase;
+// // }
 .personal__team {
   display: block;
   padding-top: 30px;
-  padding-bottom: 30px;
+
+  @include mq(mobile) {
+    padding-bottom: 24px;
+  }
+
+  @include mq(desktop) {
+    padding-bottom: 30px;
+  }
 }
 .personal__team .caption {
   margin-top: 0;
@@ -59,4 +107,32 @@
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.work__subtitles__team {
+  margin-top: 0;
+
+  @include mq(mobile) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
+}
+.subject {
+  color: var(--main-text-color);
+  font-family: "Roboto";
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include mq(mobile) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+
+  @include mq(desktop) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
