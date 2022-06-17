@@ -3,6 +3,9 @@
 /* ***************** */
 
 .navigation {
+  @include mq(mobile-only) {
+    display: none;
+  }
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -57,6 +60,9 @@
 }
 
 .header__contacts {
+  @include mq(mobile-only) {
+    display: none;
+  }
   display: flex;
   margin-top: 0;
   margin-left: auto;
