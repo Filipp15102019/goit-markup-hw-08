@@ -12,6 +12,14 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  @include mq(mobile-only) {
+    margin-left: 0 0 0 16px;
+  }
+  @include mq(tablet-only) {
+    margin-right: 88px;
+    padding-right: 0;
+  }
 }
 
 .header__logo--accent {

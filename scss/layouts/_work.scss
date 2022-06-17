@@ -3,6 +3,8 @@
 /* ***************** */
 
 .work__container {
+  display: block;
+
   @include mq(not-desktop) {
     display: none;
     padding-top: 0;
